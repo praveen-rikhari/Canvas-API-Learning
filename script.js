@@ -40,16 +40,27 @@ ctx.fillStyle = "#23b0ed"
 //creating traiangle using lines
 
 // Filled triangle
-ctx.beginPath();
-ctx.moveTo(25, 25);
-ctx.lineTo(105, 25);
-ctx.lineTo(25, 105);
-ctx.fill();
+// ctx.beginPath();
+// ctx.moveTo(25, 25);
+// ctx.lineTo(105, 25);
+// ctx.lineTo(25, 105);
+// ctx.fill();
 
 // Stroked triangle
-ctx.beginPath();
-ctx.moveTo(125, 125);
-ctx.lineTo(125, 45);
-ctx.lineTo(45, 125);
-ctx.closePath();
-ctx.stroke();
+// ctx.beginPath();
+// ctx.moveTo(125, 125);
+// ctx.lineTo(125, 45);
+// ctx.lineTo(45, 125);
+// ctx.closePath();
+// ctx.stroke();
+
+ // Quadratic curves example
+ ctx.beginPath();
+ ctx.moveTo(75, 25);
+ ctx.quadraticCurveTo(25, 25, 25, 62.5);
+ ctx.quadraticCurveTo(25, 100, 50, 100);
+ ctx.quadraticCurveTo(50, 120, 30, 125);
+ ctx.quadraticCurveTo(60, 120, 65, 100);
+ ctx.quadraticCurveTo(125, 100, 125, 62.5);
+ ctx.quadraticCurveTo(125, 25, 75, 25);
+ ctx.stroke();

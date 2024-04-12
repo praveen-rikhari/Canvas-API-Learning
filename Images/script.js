@@ -4,3 +4,4 @@ window.onload = function() {
     const img = document.getElementById("img");
     ctx.drawImage(img, 10, 10);
   };
+  
